@@ -1,0 +1,38 @@
+package Entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "Answers")
+public class Answer {
+
+	@Id
+	@Column(name="Answer_Id")
+	private int aid;
+	@Column(name="Answer")
+	private String answer;
+	
+	public int getAid() {
+		return aid;
+	}
+	public void setAid(int aid) {
+		this.aid = aid;
+	}
+	public String getAnswer() {
+		return answer;
+	}
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
+	public Answer(int aid, String answer) {
+		super();
+		this.aid = aid;
+		this.answer = answer;
+	}
+	
+	
+	
+}

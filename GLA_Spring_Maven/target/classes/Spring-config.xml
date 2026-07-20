@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Address bean -->
+    <bean id="add" class="com.GLA_Spring_Maven.Address">
+        <property name="city" value="Noida"/>
+        <property name="state" value="UP"/>
+        <property name="country" value="India"/>
+        <property name="pinCode" value="201301"/>
+    </bean>
+
+    <!-- Student bean using p-schema -->
+    <bean id="stud"
+          class="com.GLA_Spring_Maven.Student"
+          p:rollNo="2"
+          p:sName="Jay"
+          p:subject="Python"
+          p:addr-ref="add"/>
+
+    <!-- Student bean using property tags -->
+    <bean id="stud1" class="com.GLA_Spring_Maven.Student">
+        <property name="rollNo" value="3"/>
+        <property name="sName" value="rohit"/>
+        <property name="subject" value="Java"/>
+        <property name="addr" ref="add"/>
+    </bean>
+
+    <!-- Hello bean using constructor injection -->
+    <bean id="hello" class="com.GLA_Spring_Maven.Hello">
+        <constructor-arg index="0" value="1234"/>
+        <constructor-arg index="1" value="going"/>
+    </bean>
+
+</beans>

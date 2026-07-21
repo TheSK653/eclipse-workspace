@@ -1,5 +1,5 @@
 package inf;
-import java.util.*;
+import java.util.Scanner;
 
 public class cf1352c {
 	public static void main(String[] args) {

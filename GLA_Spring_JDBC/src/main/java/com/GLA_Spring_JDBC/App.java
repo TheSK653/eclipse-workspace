@@ -5,7 +5,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import Configuration.AppConfig;
-import Dao.StudentDao;
 import Dao.StudentDaoImpl;
 import Entity.Student;
 

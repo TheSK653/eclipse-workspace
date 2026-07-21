@@ -1,0 +1,78 @@
+# === Eclipse / STS ===
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+.WorkspaceConfig/
+.settings/
+.classpath
+.project
+Servers/
+
+# === Java / Build Output ===
+bin/
+gen/
+out/
+target/
+build/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar
+*.gz
+
+# === Maven / Gradle ===
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+
+# === VS Code ===
+.vscode/
+*.code-workspace
+
+# === Node / Frontend (for fullstack projects) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+coverage/
+.next/
+.nuxt/
+.cache/
+*.tsbuildinfo
+
+# === Logs / Runtime / Temp ===
+*.log
+*.tmp
+*.temp
+*.pid
+*.swp
+*.swo
+.crash_dumps/
+
+# === Local Config / Secrets ===
+.env
+.env.*
+*.local
+application.properties.local
+application.yml.local
+application-*.local.properties
+
+# === Databases / Local Data ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+desktop.ini
